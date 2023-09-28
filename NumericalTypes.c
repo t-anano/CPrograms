@@ -15,5 +15,9 @@ int main(){
 
 // Enum Numerical Type: enum day{sun, mon, tue, wed, thurs, fri, sat};
 
+//Floating point types: float, double, long double 
+
+//Void: menas cannot hold any value S
+
     return 0; 
 }
