@@ -21,4 +21,19 @@ ip = &*ip; // ip is the adress of the value at ip which is the adress of i
 //An array is a contiguously allocated sequence of objects with the same element type
 
 int ia[11]; // Array of 11 ints 
-float *afp[17]; // 17 elements of type pointer to float 
+float *afp[17]; // 17 elements of type pointer to float
+
+int main(){
+
+    char str[11];
+    for(unsigned int i = 0; i < 10;i++){
+       str[i] = '0' + i; // Yields a number 
+    }
+
+    str[10] = '\n'; 
+
+
+
+
+    return 0; 
+}
