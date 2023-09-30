@@ -1,6 +1,8 @@
 #include <stdlib.h> 
 #include <stdio.h> 
 
+typedef unsigned int uint_type; 
+typedef signed char schar_type, schar_type, *schar_p, (*fp)(void); // You can alias types in C with typedef 
 
 //Derived types are constructed from other types - 
 // These include pointers, arrays, type definitions, structures, and unions
@@ -41,7 +43,7 @@ int main(){
        func(arr[i]); // 1. arr is converted into a pointer to the initial array of 5 elements 2. i is scaled to represent 5 3. Steps 1 and 2 are added 4.  indirection is applied to the result 
        int x = arr[i][j]; // arr is converted into a pointer to the first element of type int 
 
-       
+
 
        return 0;
     }
