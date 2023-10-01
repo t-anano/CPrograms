@@ -7,7 +7,7 @@
    counter++; 
    printf("%d\n", counter);
  }
-
+//Exercise 1: Write a fucntion to return the current count of counter 
  int retrieve(){
    return counter; 
  }
@@ -21,7 +21,7 @@
  }
 
 
-// Exercise 1: Write an array of 3 function pointers that execute based on the passed index 
+// Exercise 2: Write an array of 3 function pointers that execute based on the passed index 
 int sum(int a, int b){return a + b;}
 int subtract(int a, int b){return a - b;}
 int mul(int a, int b){return a*b;}
