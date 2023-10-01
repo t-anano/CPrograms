@@ -2,7 +2,7 @@
 #include <stdio.h>
  
   static unsigned int counter = 0;
- //static objects inside a function keeps its value between invocations 
+ //static objects inside a function keeps its value between invocations   
  void increment(void){
    counter++; 
    printf("%d\n", counter);
@@ -11,7 +11,6 @@
  int retrieve(){
    return counter; 
  }
-
 
 
  // static objects must be initialized to a constant and not a variable 
@@ -26,7 +25,7 @@
 int sum(int a, int b){return a + b;}
 int subtract(int a, int b){return a - b;}
 int mul(int a, int b){return a*b;}
- int (*p[3])(int x, int y); // array of three pointers to int functions 
+int (*p[3])(int x, int y); // this is a pointer array to three functions in C 
 
  int main(void){
     for(int i = 0; i < 5;i++){ 
@@ -35,7 +34,7 @@ int mul(int a, int b){return a*b;}
        
     }
 
-   p[0] = sum; 
+   p[0] = sum; // set each index of the function pointer array to each function 
    p[1] = subtract; 
    p[2] = mul; 
 
